@@ -1,11 +1,11 @@
 # Project information
 site_name: Programmēšanas mācību materiāli
-site_url: https://siic-lv.github.io/docs-test/
+site_url: https://siic-lv.github.io/programmesana/
 site_description: >-
   Mācību materiāli pamatskolas un vidusskolas programmēšanas skolotājiem.
 # Repository
-# repo_name: siic-lv/docs-test
-repo_url: https://github.com/siic-lv/docs-test
+# repo_name: siic-lv/programmesana
+repo_url: https://github.com/siic-lv/programmesana
 # edit_uri: ""
 
 # Copyright
@@ -36,6 +36,7 @@ theme:
 # Plugins
 plugins:
   - search
+# - htmlproofer # checks outside URL validity, makes build super slow
 #   - minify:
 #       minify_html: true
 
@@ -44,8 +45,8 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/siic-lv
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/siic
+    # - icon: fontawesome/brands/twitter
+    #   link: https://twitter.com/siic
 
 # Extensions
 markdown_extensions:
@@ -74,7 +75,7 @@ markdown_extensions:
   - pymdownx.magiclink:
       repo_url_shorthand: true
       user: siic-lv
-      repo: docs-test
+      repo: programmesana
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets:
@@ -89,12 +90,22 @@ markdown_extensions:
 nav:
   - Ievads: index.md
   - Pamatskola:
-    - pamatskola/uzdevumi.md
+    - pamatskola.md
+    - pamatskola/4.klase.md
+    - pamatskola/5.klase.md
+    - pamatskola/6.klase.md
+    - pamatskola/7.klase.md
+    - pamatskola/8.klase.md
+    - pamatskola/9.klase.md
   - Vidusskola:
-    - vidusskola/uzdevumi.md
-  - Palīdzēt: palidzet.md
+    - vidusskola.md
+    - vidusskola/p1.md
+    - vidusskola/p2_vienibu_testi.md
+  - Uzlabo materiālus: palidzet.md
   - Licenze: license.md
 
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML  
 # Google Analytics
 # google_analytics:
 #   - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
